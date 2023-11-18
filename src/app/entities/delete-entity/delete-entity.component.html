@@ -1,0 +1,8 @@
+<div class="container" *ngIf="entityId$ | async  as entityId ">
+    <h3 mat-dialog-title>Eliminar Entidad</h3>
+
+    <div mat-dialog-actions>
+        <button mat-button mat-dialog-close (click)="delete(entityId)"  >Aceptar</button>
+        <button mat-button   mat-dialog-close tabindex="-1"  >Cancelar</button>
+    </div>
+</div>

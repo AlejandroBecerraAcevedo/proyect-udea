@@ -1,0 +1,11 @@
+@import './variable.css';
+
+.mat-toolbar.mat-primary {
+    --mat-toolbar-container-background-color: var( --color-primary);
+    --mat-toolbar-container-text-color: white;
+}
+
+.mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: var( --color-primary);;
+    --mdc-protected-button-label-text-color: #fff;
+}

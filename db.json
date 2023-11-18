@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "entities": [
+    {
+      "id": 1,
+      "name": "Sebastian Castro"
+    },
+    {
+      "name": "Douglas alarcon",
+      "id": 2
+    },
+    {
+      "name": "Eliana María Alarcón Salazar",
+      "id": 3
+    },
+    {
+      "name": "Girasol Gutierrez",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "Yuliana de Alarcon"
+    },
+    {
+      "id": 6,
+      "name": "Alejandro Becerra"
+    }
+  ],
+  "statistics": [
+    "Estaistico 1"
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+  
+}

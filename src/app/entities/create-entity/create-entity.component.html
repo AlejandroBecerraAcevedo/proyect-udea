@@ -1,0 +1,15 @@
+<ng-container *ngIf="entity$ | async as entity">
+    <h1 mat-dialog-title>Entidades</h1>
+    <div mat-dialog-content>
+        <form [formGroup]="entityForm">
+            <mat-form-field class="example-form-field">
+                <mat-label>Nombre</mat-label>
+                <input matInput type="text" formControlName="name">
+            </mat-form-field>
+        </form>
+    </div>
+    <div mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close (click)="save(entity)">Guardar</button>
+        <button mat-button mat-dialog-close>Cerrar</button>
+    </div>
+</ng-container>
