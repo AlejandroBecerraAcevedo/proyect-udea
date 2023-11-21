@@ -1,1 +1,38 @@
-<p>statistics-dashboard works!</p>
+<div class="container" fxLayout="row" fxLayoutAlign="center none" style="padding-top: 10px;">
+    <div fxFlex="95%">
+        <mat-card-content>
+            <mat-toolbar color="primary">
+                <span>Estadísticos</span>
+            </mat-toolbar>
+            <div class="container" fxLayout="row" fxLayoutGap="20" style="padding-top: 10px;">
+                
+                    <mat-form-field appearance="fill" fxFlex="40%">
+                        <mat-label>Unidad Académica</mat-label>
+                        <mat-select name="food" [(ngModel)]="academicUnit" (selectionChange)= "onChangeAcademicUnit()">
+                            <mat-option></mat-option>
+                            <mat-option *ngFor="let au of academicUnits "
+                                [value]="au.id">
+                                {{au.name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" fxFlex="40%">
+                        <mat-label>Programa Académico</mat-label>
+                        <mat-select name="food">
+                            <mat-option></mat-option>
+                            <mat-option *ngFor="let pg of programs"
+                                [value]="pg.id">
+                                {{pg.name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <div fxFlex="20%" fxLayoutAlign="center" style="padding: 10px;">
+                        <button  fxFlex="100%" mat-raised-button color="primary" (click)="getStatistic()">Consultar</button>
+                    </div>
+            </div>
+         
+                <app-chart  ></app-chart>
+            
+        </mat-card-content>
+    </div>
+</div>

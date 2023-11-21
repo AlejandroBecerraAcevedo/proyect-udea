@@ -1,0 +1,8 @@
+article {
+    display: flex;
+  }
+  
+  highcharts-chart {
+    flex-grow: 3;
+  }
+  

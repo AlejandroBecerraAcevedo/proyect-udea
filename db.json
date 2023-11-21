@@ -31,10 +31,6 @@
       "id": 4
     },
     {
-      "id": 5,
-      "name": "Yuliana de Alarcon"
-    },
-    {
       "id": 6,
       "name": "Alejandro Becerra"
     }
@@ -42,8 +38,30 @@
   "statistics": [
     "Estaistico 1"
   ],
+  "academicUnits": [
+    {
+      "id": 1,
+      "name": "Facultad de Ingeniería"
+    },
+    {
+      "id": 2,
+      "name": "Facultad de Medicina"
+    }
+  ],
+  "programs": [
+    {
+      "id": 1,
+      "idAcademicUnit": 1,
+      "name": "Ingeniería de Sistema"
+    },
+    {
+      "id": 2,
+      "idAcademicUnit": 1,
+      "name": "Ingeniería de Química"
+    }
+
+  ],
   "profile": {
     "name": "typicode"
   }
-  
 }
