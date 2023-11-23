@@ -1,0 +1,49 @@
+<div class="container" fxLayout="row" fxLayoutAlign="center none" style="padding-top: 10px;">
+    <div fxFlex="95%">
+        <mat-card-content>
+            <mat-toolbar color="primary">
+                <span>Probabilidades</span>
+            </mat-toolbar>
+            <div class="container" fxLayout="row" fxLayoutGap="20" style="padding-top: 10px;">
+
+
+                <div fxFlex="33%" fxLayout="column">
+                    <label id="example-radio-group-label" style="padding-left: 10px;">Género</label>
+                    <mat-radio-group aria-labelledby="example-radio-group-label">
+                        <mat-radio-button value="1">Hombre</mat-radio-button>
+                        <mat-radio-button value="2">Mujer</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+                <mat-form-field appearance="fill" fxFlex="33%">
+                    <mat-label>Municipio</mat-label>
+                    <mat-select name="program">
+                        <mat-option></mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" fxFlex="33%">
+                    <mat-label>Estrato Social</mat-label>
+                    <mat-select name="program">
+                        <mat-option></mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+
+            <div class="container" fxLayout="row" fxLayoutGap="20" style="padding-top: 10px;">
+
+                <mat-form-field appearance="fill" fxFlex="100%">
+                    <mat-label>Programa Académico</mat-label>
+                    <mat-select name="program">
+                        <mat-option></mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div  fxLayout="row" fxLayoutAlign="end center">
+                <button  fxFlex="20%" mat-raised-button color="primary" (click)="onCalculateProbability()" >Calcular</button>
+            </div>
+        </mat-card-content>
+
+    </div>
+</div>

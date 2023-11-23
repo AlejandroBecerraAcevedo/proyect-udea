@@ -8,7 +8,7 @@
                 
                     <mat-form-field appearance="fill" fxFlex="40%">
                         <mat-label>Unidad Académica</mat-label>
-                        <mat-select name="food" [(ngModel)]="academicUnit" (selectionChange)= "onChangeAcademicUnit()">
+                        <mat-select name="academicUnit" [(ngModel)]="academicUnit" (selectionChange)= "onChangeAcademicUnit()">
                             <mat-option></mat-option>
                             <mat-option *ngFor="let au of academicUnits "
                                 [value]="au.id">
@@ -18,7 +18,7 @@
                     </mat-form-field>
                     <mat-form-field appearance="fill" fxFlex="40%">
                         <mat-label>Programa Académico</mat-label>
-                        <mat-select name="food">
+                        <mat-select name="program">
                             <mat-option></mat-option>
                             <mat-option *ngFor="let pg of programs"
                                 [value]="pg.id">

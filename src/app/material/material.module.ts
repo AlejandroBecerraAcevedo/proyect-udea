@@ -11,6 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -25,7 +26,8 @@ const MATERIAL = [
   MatCardModule,
   MatDialogModule,
   MatInputModule,
-  MatSelectModule
+  MatSelectModule,
+  MatRadioModule
 ];
 
 @NgModule({
