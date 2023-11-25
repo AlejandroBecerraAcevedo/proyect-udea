@@ -35,6 +35,17 @@
       "name": "Alejandro Becerra"
     }
   ],
+
+  "municipalities": [
+    {
+      "id": 1,
+      "name": "Medellín"
+    },
+    {
+      "id": 2,
+      "name": "Bogotá"
+    }
+  ],
   "statistics": [
     "Estaistico 1"
   ],
@@ -47,6 +58,33 @@
       "id": 2,
       "name": "Facultad de Medicina"
     }
+  ],
+
+  "socialEstratums": [
+      {
+        "id":1,
+        "name": "Estrato 1"
+      },
+      {
+        "id":2,
+        "name": "Estrato 2"
+      },
+      {
+        "id":3,
+        "name": "Estrato 3"
+      },
+      {
+        "id":4,
+        "name": "Estrato 4"
+      },
+      {
+        "id":5,
+        "name": "Estrato 5"
+      },
+      {
+        "id":5,
+        "name": "Estrato 6"
+      }
   ],
   "programs": [
     {

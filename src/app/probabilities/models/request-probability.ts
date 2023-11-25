@@ -1,5 +1,5 @@
 export interface RequestProbabiity{
-    idGender: number;
+    gender: string;
     idMunicipality: number;
     idSocialStratum: number;
     idProgram: number;

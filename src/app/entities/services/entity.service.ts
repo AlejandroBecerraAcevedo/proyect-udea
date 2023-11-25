@@ -8,7 +8,7 @@ import { Entity } from '../models/entity.model';
 })
 export class EntityService {
 
-  baseUrl = "http://localhost:3000/entities"
+  baseUrl = "http://localhost:3000/entities";
 
   constructor(private http: HttpClient) { }
 
