@@ -35,7 +35,8 @@ export class ChartComponent implements OnInit {
                 type: 'column'
             },
             title: {
-                align: 'center'
+                align: 'center',
+                text: 'POBLACIÓN COMPLETA',
             },
 
             xAxis: {
@@ -51,7 +52,14 @@ export class ChartComponent implements OnInit {
     loadData() {
         this.store.select(getStatistic).subscribe((statistic) => {
             if (this.optFromInput) {
-                this.optFromInput.title!.text = statistic.unidadAcademica + ' ' + statistic.programaAcademico;
+ //               if(statistic.unidadAcademica == ''){
+
+//                    this.optFromInput.title!.text = 'POBLACIÓN COMPLETA';
+
+ //               } else {
+
+//                    this.optFromInput.title!.text = statistic.unidadAcademica + ' ' + statistic.programaAcademico;
+ //               }
                 this.optFromInput.series = statistic.series as any;
                 this.optFromInput.plotOptions = {
                     column: {

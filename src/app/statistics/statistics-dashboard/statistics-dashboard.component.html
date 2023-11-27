@@ -12,17 +12,17 @@
                             <mat-option></mat-option>
                             <mat-option *ngFor="let au of academicUnits "
                                 [value]="au.id">
-                                {{au.name}}
+                                {{au.nombre}}
                             </mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field appearance="fill" fxFlex="40%">
                         <mat-label>Programa Académico</mat-label>
-                        <mat-select name="program">
+                        <mat-select name="program" [(ngModel)]="program">
                             <mat-option></mat-option>
                             <mat-option *ngFor="let pg of programs"
-                                [value]="pg.id">
-                                {{pg.name}}
+                                [value]="pg.codigo_programa">
+                                {{pg.nombre_programa}}
                             </mat-option>
                         </mat-select>
                     </mat-form-field>

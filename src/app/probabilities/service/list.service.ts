@@ -15,7 +15,7 @@ export class ListService {
   constructor(private http: HttpClient) { }
 
   getMunicipalities(): Observable<Municipality[]>{
-    return this.http.get<Municipality[]>(`${this.baseUrl}/municipalities`);
+    return this.http.get<Municipality[]>(`http://127.0.0.1:8000/municipios/`);
   }
 
   getSocialStratums(): Observable<SocialStratum[]>{
@@ -23,7 +23,7 @@ export class ListService {
   }
 
   getPrograms(): Observable<Program[]> {
-    return this.http.get<Program[]>(`${this.baseUrl}/programs`);
+    return this.http.get<Program[]>(`http://127.0.0.1:8000/programs/`);
   }
  
 }

@@ -1,4 +1,4 @@
 export interface AcademicUnit {
     id: number,
-    name: string
+    nombre: string
 }

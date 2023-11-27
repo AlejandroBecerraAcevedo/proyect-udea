@@ -13,20 +13,15 @@ export class StatisticsService {
   constructor(private http: HttpClient) { }
 
   get(idAcademicUnit?: number, idProgram?:number): Observable<Statistic> {
-    return of(
-      {
-        unidadAcademica: '',
-        programaAcademico: '',
-        total: 3157,
-        series: [{
-          name: 'Masculino',
-          data: [434, 290, 307, 200, 500, 100]
-        }, {
-          name: 'Femenino',
-          data: [272, 153, 156, 300, 345, 200]
-        },]
-      }
-    )
-    // return this.http.get<string[]>(this.baseUrl);
+    console.log(idAcademicUnit, idProgram);
+
+    if(idAcademicUnit && idProgram){
+      return this.http.get<Statistic>(`http://127.0.0.1:8000/statistics_program/${idAcademicUnit}/${idProgram}`);
+    }else if(idAcademicUnit){
+      return this.http.get<Statistic>(`http://127.0.0.1:8000/statistics/${idAcademicUnit}`);
+    }else{
+      return this.http.get<Statistic>("http://127.0.0.1:8000/statistics/");      
+    }
+    
   }
 }

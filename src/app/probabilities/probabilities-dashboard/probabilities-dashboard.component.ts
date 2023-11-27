@@ -44,7 +44,9 @@ export class ProbabilitiesDashboardComponent implements OnInit {
         municipalities: this.listService.getMunicipalities(),
         socialStratums: this.listService.getSocialStratums(),
         programs: this.listService.getPrograms()
+
       }).subscribe((lists)=> {
+        console.log("listas",lists);
          this.municipalities = lists.municipalities;
          this.socialStratums = lists.socialStratums;
          this.programs = lists.programs;

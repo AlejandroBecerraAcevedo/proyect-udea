@@ -14,11 +14,11 @@ export class ListService {
   constructor(private http: HttpClient) { }
 
   getAcademitUnits(): Observable<AcademicUnit[]> {
-    return this.http.get<AcademicUnit[]>(`${this.baseUrl}/academicUnits`)
+    return this.http.get<AcademicUnit[]>('http://127.0.0.1:8000/academicUnits/')
   }
 
   getPrograms(idAcademicUnit: number): Observable<Program[]> {
-    return this.http.get<Program[]>(`${this.baseUrl}/programs`);
+    return this.http.get<Program[]>(`http://127.0.0.1:8000/programs/${idAcademicUnit}`);
   }
 
 }

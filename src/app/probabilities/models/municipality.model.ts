@@ -1,4 +1,5 @@
 export interface Municipality {
-    id: number;
-    name: string;
+    codigo_ciudad: number;
+    nombre_ciudad: string;
+    codigo_departamento: number;
 }

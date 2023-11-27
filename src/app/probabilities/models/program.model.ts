@@ -1,5 +1,5 @@
 export interface Program  {
-    id: number,
-    idAcademicUnit: number,
-    name: string
+    codigo_programa: number,
+    coigo_unidad: number,
+    nombre_programa: string
 }

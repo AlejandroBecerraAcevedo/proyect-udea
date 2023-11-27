@@ -47,7 +47,10 @@ export class StatisticsDashboardComponent implements OnInit {
     }
   }
 
+
   getStatistic() {
+
+    console.log("commit",this.academicUnit, this.program);
     this.store.dispatch(StatisticActions.loadStatitics({idAcademicUnit:this.academicUnit, idProgram:this.program}));
   }
 

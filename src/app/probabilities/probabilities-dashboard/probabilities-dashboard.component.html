@@ -13,8 +13,8 @@
                     <div fxFlex="33%" fxLayout="column">
                         <label id="example-radio-group-label" style="padding-left: 10px;">Género</label>
                         <mat-radio-group aria-labelledby="example-radio-group-label" formControlName="gender">
-                            <mat-radio-button value="masculino">Masculino</mat-radio-button>
-                            <mat-radio-button value="femenino">Femenino</mat-radio-button>
+                            <mat-radio-button value="MASC">Masculino</mat-radio-button>
+                            <mat-radio-button value="FEME">Femenino</mat-radio-button>
                             <mat-error *ngIf="form.get('gender')?.hasError('required')">Debes elegir un género</mat-error>
                         </mat-radio-group>
                     </div>
@@ -23,8 +23,8 @@
                         <mat-label>Municipio</mat-label>
                         <mat-select name="municipality" formControlName="idMunicipality">
                             <mat-option></mat-option>
-                            <mat-option *ngFor="let mp of municipalities"  [value]="mp.id">
-                                {{mp.name}}
+                            <mat-option *ngFor="let mp of municipalities"  [value]="mp.codigo_ciudad">
+                                {{mp.nombre_ciudad}}
                             </mat-option>
                         </mat-select>
                         <mat-error *ngIf="form.get('idMunicipality')?.hasError('required')">Debes elegir un municipio</mat-error>
@@ -49,13 +49,14 @@
                         <mat-label>Programa Académico</mat-label>
                         <mat-select name="program" formControlName="idProgram">
                             <mat-option></mat-option>
-                            <mat-option *ngFor="let pg of programs"  [value]="pg.id">
-                                {{pg.name}}
+                            <mat-option *ngFor="let pg of programs"  [value]="pg.codigo_programa">
+                                {{pg.nombre_programa}}
                             </mat-option>
                         </mat-select>
                         <mat-error *ngIf="form.get('idProgram')?.hasError('required')">Debes elegir un programa</mat-error>
                     </mat-form-field>
                 </div>
+
             </form>
             
 
@@ -63,6 +64,7 @@
             <div  fxLayout="row" fxLayoutAlign="end center">
                 <button  fxFlex="20%" mat-raised-button color="primary" (click)="onCalculateProbability()" >Calcular</button>
             </div>
+            
         </mat-card-content>
 
     </div>
